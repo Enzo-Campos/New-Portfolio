@@ -1,5 +1,32 @@
-export default function ButtonContato (){
+interface ButtonContatoProps {
+  link: string;
+  variant?: "white" | "glass";
+  children: React.ReactNode;
+}
+
+export default function ButtonContato ({
+  link, 
+  variant = "white",
+  children,
+}: ButtonContatoProps){
+  const base =
+  "rounded-full py-2 px-6 lg:py-2.5 lg:px-10 font-black transition-all duration-300 border-1 border-white border-solid";
+  
+  const variants = {
+  white: "bg-white border-2 text-black hover:bg-transparent hover:text-white hover:border-white",
+  glass:
+    "bg-white/5 backdrop-blur-md border-white/20 text-white hover:bg-white/10",
+  };
+
     return (
-        <a href="https://api.whatsapp.com/send?phone=5513996595151&text=Ol%C3%A1%20Enzo,%20gostei%20do%20seu%20portif%C3%B3lio!%20Quando%20podemos%20come%C3%A7ar?" className="bg-white py-2.5 px-10 w-auto rounded-full text-black font-black">CONTATO</a>
+        <a 
+        href={link} 
+        download
+        className={`${base} ${variants[variant]}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        {children} 
+        </a>
     );
 }
