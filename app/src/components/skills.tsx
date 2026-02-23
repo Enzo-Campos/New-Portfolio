@@ -6,7 +6,7 @@ interface SkillProps {
 export default function Skills({ tags, title }: SkillProps) {
   return (
     <div className="m-3">
-      <div className="bg-black/20 backdrop-blur-[5px] flex flex-col p-6 rounded-2xl gap-3 m-auto h-40 lg:w-[300px] max-w-[300px] pb-6 border border-white/10">
+      <div className="bg-black/20 backdrop-blur-[5px] flex flex-col p-6 rounded-2xl gap-3 m-auto h-40 lg:w-[300px] max-w-[350px] pb-6 border border-white/10">
         <h3 className="text-md font-semibold">{title}</h3>
 
         <div className="flex gap-2 flex-wrap">
