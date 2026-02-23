@@ -8,7 +8,7 @@ export default function Header () {
                 <ul className="place-content-between w-[45%] max-w-[320px] items-center hidden lg:flex">
                     <a href="/#skills"><li>SKILLS</li></a>
                     <a href="/#portfolio"><li>PORTFOLIO</li></a>
-                    <a href="/docs/Enzo_Campos_Front-end_Developer.pdf" download><li>DOWNLOAD CV</li></a>
+                    <a href="/docs/Enzo_Campos_Fullstack_Developer.pdf" download><li>DOWNLOAD CV</li></a>
                 </ul>
                 <div className="w-[40%] flex place-content-end items-center">
                 <ButtonContato link="https://api.whatsapp.com/send?phone=5513996595151&text=Ol%C3%A1%20Enzo,%20gostei%20do%20seu%20portif%C3%B3lio!%20Quando%20podemos%20come%C3%A7ar?">
